@@ -3,7 +3,7 @@
 這是使用卷積神經網路建置的行人分類的code
 # 建置環境
 Python 3<br />
-TensorFlow>=1.9.0<br />
+TensorFlow>=2.0.0<br />
 numpy<br />
 os<br />
 # 數據集
