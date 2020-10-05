@@ -17,5 +17,33 @@ os<br />
     .<br />
     .<br />
 </pre>
+使用seperate_train_split.ipynb將資料分為訓練集以及測試集
 # 訓練
-先去**config.py**修改相關配置
+先去self_trainer修改訓練路徑
+<pre>
+# I commented out some of the code for learning the model.
+def main():
+    train_dict = reader('dataset_seperate/train/')
+    X_train = np.array(train_dict['image'])
+    y_train = to_categorical(np.array(train_dict['label']))
+
+    train_model(X_train, y_train)
+
+if __name__=='__main__':
+    main()
+</pre>
+# 測試
+先去self_trainer_test修改訓練路徑
+<pre>
+# I commented out some of the code for learning the model.
+def main():
+    test_dict = reader('dataset_seperate/test/')
+    X_test = np.array(test_dict['image'])
+    label = np.array(test_dict['label'])
+    # I do not recommend trying to train the model on a kaggle.
+    #train_model(X_train, y_train)
+    test_model(X_test, label)
+
+if __name__=='__main__':
+    main()
+</pre>
