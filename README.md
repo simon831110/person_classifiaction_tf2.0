@@ -10,9 +10,9 @@ os<br />
 數據集包含了Market1501以及MARS下載路徑為:http://www.liangzheng.com.cn/Project/project_reid.html ，並將行人圖片依照ID分布在不同的資料夾中<br />
 <pre>
 /dataset<br />
-    /dataset/0<br />
-    /dataset/1<br />
-    /dataset/2<br />
+    /dataset/0000<br />
+    /dataset/0001<br />
+    /dataset/0002<br />
     .<br />
     .<br />
     .<br />
